@@ -1,6 +1,8 @@
 # Project Overview
 
-This is a Java project managed with Maven. It consists of 6 modules, each containing a simple function with clear boundaries for testing, particularly for boundary value analysis. The project uses Java 8 and JUnit 5 for testing.
+This is a Java project managed with Maven. It is a simple course enrollment system with a command-line interface. The project uses Java 8 and JUnit 5 for testing.
+
+The package name for this project is `com.course.enrollment.system`.
 
 The 6 modules are:
 - Admin
@@ -20,16 +22,18 @@ To build the project, run the following command in the root directory:
 mvn clean install
 ```
 
-## Running tests
+## Running the application
 
-To run the tests, use the following command:
+To run the application, use the following command:
 
 ```bash
-mvn test
+mvn exec:java -Dexec.mainClass="com.course.enrollment.system.main.Main"
 ```
+
+This will start the command-line interface for the course enrollment system.
 
 # Development Conventions
 
 *   **Code Style:** The code follows standard Java conventions.
-*   **Testing:** Unit tests are written using JUnit 5 and are located in the `src/test/java` directory. Each module has its own test class.
+*   **Testing:** You can add your own unit tests in the `src/test/java` directory.
 *   **Dependencies:** Dependencies are managed in the `pom.xml` file.
